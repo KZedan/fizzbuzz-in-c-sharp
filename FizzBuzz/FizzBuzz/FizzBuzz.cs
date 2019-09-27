@@ -4,15 +4,19 @@ namespace FizzBuzz
 {
     public class FizzBuzzStarter
     {
-        public static string FizzBuzz(int number)
+        public static object FizzBuzz(int number)
         {
-            if (number == 3)
+            if (number % 3 == 0)
             {
                 return "Fizz";
             }
-            else
+            else if (number % 5 == 0)
             {
                 return "Buzz";
+            }
+            else
+            {
+                return number;
             }
         }
 
